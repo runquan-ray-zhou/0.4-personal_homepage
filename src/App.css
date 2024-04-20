@@ -41,7 +41,7 @@ nav{
 .logo{
     width: 200px;
     cursor: pointer;
-    border-radius: 50%;
+    /* border-radius: 50%; */
 }
 nav ul li{
     display: inline-block;

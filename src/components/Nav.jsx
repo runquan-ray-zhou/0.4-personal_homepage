@@ -15,7 +15,7 @@ export default function Nav() {
     return (
 
     <nav>
-        <a href="https://www.pursuit.org"><img src="https://photos.google.com/photo/AF1QipMu8dAMSoS7opfoI7gKdg9cLEFa9S6MuzGth43l" className="logo" /></a>
+        <a href="https://www.pursuit.org"><img src="https://pursuit.codetrack.dev/pursuit_logo.png" className="logo" /></a>
         <ul>
             <li><a href="">HOME</a></li>
             <li><a href="">ABOUT</a></li>
