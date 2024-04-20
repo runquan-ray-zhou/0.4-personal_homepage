@@ -15,7 +15,7 @@ export default function Nav() {
     return (
 
     <nav>
-        <a href="https://www.pursuit.org"><img src="src/assets/9265902-logo.png" className="logo" /></a>
+        <a href="https://www.pursuit.org"><img src="./src/assets/9265902-logo.png" className="logo" /></a>
         <ul>
             <li><a href="">HOME</a></li>
             <li><a href="">ABOUT</a></li>
@@ -31,7 +31,7 @@ export default function Nav() {
                 </div>
             </li>
         </ul>
-        <img src="src/assets/moon.png" id="icon" />
+        <img src="./src/assets/moon.png" id="icon" />
     </nav>
 
     )

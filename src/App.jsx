@@ -15,8 +15,6 @@ function App() {
       <Info />
       <ImageBox />
       <SocialLinks />
-
-
     </div>
   )
 }
