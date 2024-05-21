@@ -95,26 +95,26 @@ span{
     border-radius: 5px;
 }
 .img-box{
-    width: 45%;
-    height: 80%;
+    width: 25%;
+    height: 50%;
     position: absolute;
-    bottom: 0;
-    right: 100px;
+    top: 100px;
+    right: 400px;
 }
 .img-box img{
-    height: 100%;
+    height: 50%;
     position: absolute;
     left: 50%;
     bottom: 0;
     transform: translateX(-50%);
-    border-radius: 50%;
+    border-radius: 10px;
     transition: bottom 1s, left 1s;
 }
 .img-box:hover .back-img{
-    bottom: 40px;
+    bottom: 140px;
 }
 .img-box:hover .main-img{
-    left: 54px;
+    left: 1px;
 }
 .social-links{
     margin-left: 8%;
