@@ -27,8 +27,7 @@ export default function Nav() {
         <a href="https://www.pursuit.org"><img src="https://pursuit.codetrack.dev/pursuit_logo.png" className="logo" /></a>
         <ul>
             <li><a href="">HOME</a></li>
-            <li><a href="">ABOUT</a></li>
-            <li><a href="">HIRE ME</a></li>
+            <li><a href="">ABOUT ME</a></li>
             <li>
                 <span onClick={handleGroupDisplayChange}>GROUP PROJECTS</span>
                 <div className="dropDown" style={{display:groupDisplay}}>
@@ -46,6 +45,7 @@ export default function Nav() {
                 <span><a href="https://cowsaywhat.netlify.app/">0.6 - COW SAY</a></span>
                 <span><a href="https://quiz-me-trivia-app.netlify.app/">0.8 - QUIZ ME</a></span>
                 <span><a href="https://pocket-dictionary-app.netlify.app/">1.0 - DICTIONARY</a></span>
+                <span><a href="https://linknyc-finder.netlify.app/">2.9 - LinkNYC FINDER</a></span>
                 </div>
             </li>
         </ul>
