@@ -13,7 +13,7 @@ function App() {
     <div className="App">
       <Nav />
       <Info />
-      <ImageBox />
+      {/* <ImageBox /> */}
       <SocialLinks />
     </div>
   )
