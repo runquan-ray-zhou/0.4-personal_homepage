@@ -106,6 +106,7 @@ span{
     width: 25%;
     height: 50%;
     margin-left: 8%;
+    margin-top: 5%;
 }
 .img-box img{
     position: absolute;
@@ -126,15 +127,9 @@ span{
 .social-links a:hover{
    color: purple; 
 }
-.info__shortname {
-    display: none;
-}
 
 @media (max-height: 900px) {
-    .info__fullname {
+    .img-box {
         display: none;
-    }
-    .info__shortname {
-        display: flex;
     }
 }
