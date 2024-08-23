@@ -39,9 +39,9 @@ nav{
     justify-content: space-between;
 }
 .logo{
+    margin-left: -20px;
     width: 200px;
     cursor: pointer;
-    /* border-radius: 50%; */
 }
 nav ul li{
     cursor: pointer;
@@ -74,8 +74,12 @@ nav ul li a:hover{
     }
 }
 .info{
+    display: flex;
+    flex-direction: column;
     margin-left: 8%;
-    margin-top: 15%;
+    position: fixed;
+    bottom: 0;
+    margin-bottom: 40px;
 }
 .info h1{
     font-size: 70px;
@@ -101,27 +105,19 @@ span{
 .img-box{
     width: 25%;
     height: 50%;
-    position: absolute;
-    top: 100px;
-    right: 400px;
+    margin-left: 8%;
+    margin-top: 5%;
 }
 .img-box img{
-    height: 50%;
     position: absolute;
-    left: 50%;
-    bottom: 0;
-    transform: translateX(-50%);
-    border-radius: 10px;
-    transition: bottom 1s, left 1s;
-}
-.img-box:hover .back-img{
-    bottom: 140px;
-}
-.img-box:hover .main-img{
-    left: 1px;
+    border-radius: 50px;
+    height: 25%;
 }
 .social-links{
-    margin-left: 8%;
+    margin-left: 8.5%;
+    position: fixed;
+    bottom: 0;
+    margin-bottom: 10px;
 }
 .social-links a{
     font-size: 30px;
@@ -130,4 +126,16 @@ span{
 }
 .social-links a:hover{
    color: purple; 
+}
+.info__shortname {
+    display: none;
+}
+
+@media (max-height: 900px) {
+    .info__fullname {
+        display: none;
+    }
+    .info__shortname {
+        display: flex;
+    }
 }

@@ -5,7 +5,6 @@ export default function ImageBox() {
 
     return (
         <div className="img-box">
-            <img src={color} className="back-img" />
             <img src={bw} className="main-img" />
         </div>
     )
