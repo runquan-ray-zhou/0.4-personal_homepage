@@ -128,12 +128,13 @@ span{
 @media (max-width: 500px){
     nav {
         position: fixed;
+        z-index: 2;
     }
     li {
         font-size: 0.8em;
     }
     .logo{
-        margin-left: 40px;
+        margin-left: 20px;
         margin-top: -60px;
         width: 100px;
         cursor: pointer;
@@ -148,12 +149,13 @@ span{
 @media (max-height: 500px){
     nav {
         position: fixed;
+        z-index: 2;
     }
     li {
         font-size: 0.8em;
     }
     .logo{
-        margin-left: 40px;
+        margin-left: 20px;
         margin-top: -60px;
         width: 100px;
         cursor: pointer;
