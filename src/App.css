@@ -127,8 +127,10 @@ span{
 }
 
 @media (max-width: 500px){
-    .img-box {
-        display: none;
+    .logo{
+        margin-left: -20px;
+        width: 100px;
+        cursor: pointer;
     }
     .info__fullname {
         display: none;
@@ -138,8 +140,10 @@ span{
     }
 }
 @media (max-height: 500px){
-    .img-box {
-        display: none;
+    .logo{
+        margin-left: -20px;
+        width: 100px;
+        cursor: pointer;
     }
     .info__fullname {
         display: none;
