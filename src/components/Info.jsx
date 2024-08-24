@@ -4,6 +4,7 @@ export default function Info() {
     <>
         <div className="info">
             <h1 className="info__fullname">I'm Runquan <br/> <span>(Ray)</span> Zhou</h1>
+            <h1 className="info__shortname">I'm <span>Ray</span></h1>
             <p>Driven by Challenges, Fueled by Creativity.</p>
             <div>
                 <a href="https://drive.google.com/file/d/1PU9O1aSlj2VsTaWBED22dhGutsqY4YopTi5Uoedt4-s/view" target="_blank" rel="noopener noreferrer">View CV</a>

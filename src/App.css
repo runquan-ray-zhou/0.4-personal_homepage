@@ -102,6 +102,9 @@ span{
     margin: 30px 2px;
     border-radius: 5px;
 }
+.info__shortname {
+    display: none;
+}
 .img-box{
     width: 25%;
     height: 50%;
@@ -131,5 +134,11 @@ span{
 @media (max-height: 900px) {
     .img-box {
         display: none;
+    }
+    .info__fullname {
+        display: none;
+    }
+    .info__shortname {
+        display: block;
     }
 }
