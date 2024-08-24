@@ -2,7 +2,7 @@
 import './App.css'
 import Nav from './components/Nav'
 import Info from './components/Info'
-import ImageBox from './components/ImageBox'
+import Main from './components/Main'
 
 
 function App() {
@@ -12,7 +12,7 @@ function App() {
     <div className="App">
       <Nav />
       <Info />
-      <ImageBox />
+      <Main />
     </div>
   )
 }

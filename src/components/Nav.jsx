@@ -43,8 +43,6 @@ export default function Nav() {
     <nav>
         <a href="https://runquanrayzhou.netlify.app/"><img src={logo} className="logo" /></a>
         <ul>
-            <li><a href="">HOME</a></li>
-            <li><a href="">ABOUT ME</a></li>
             <li>
                 <span onClick={handleGroupDisplayChange}>GROUP PROJECTS</span>
                     <div className="dropDown" style={{display:groupDisplay}}>
@@ -68,6 +66,7 @@ export default function Nav() {
                             <span><a href="https://linknyc-finder.netlify.app/" target="_blank" rel="noopener noreferrer">2.9 - LinkNYC FINDER</a></span>
                         </div>
             </li>
+            <li><a href="">ABOUT ME</a></li>
         </ul>
     </nav>
 
