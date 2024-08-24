@@ -127,8 +127,12 @@ span{
 }
 
 @media (max-width: 500px){
+    li {
+        font-size: 0.8em;
+    }
     .logo{
         margin-left: -20px;
+        margin-top: -20px;
         width: 100px;
         cursor: pointer;
     }
@@ -140,8 +144,12 @@ span{
     }
 }
 @media (max-height: 500px){
+    li {
+        font-size: 0.8em;
+    }
     .logo{
         margin-left: -20px;
+        margin-top: -20px;
         width: 100px;
         cursor: pointer;
     }
