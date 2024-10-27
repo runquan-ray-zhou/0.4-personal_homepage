@@ -72,7 +72,7 @@ export default function Nav() {
                 YOUTUBE CLONE
               </a>
             </span>
-            <span>
+            {/* <span>
               <a
                 href="https://streetbites.netlify.app/"
                 target="_blank"
@@ -80,6 +80,26 @@ export default function Nav() {
                 className="hover:underline"
               >
                 STREETBITES APP
+              </a>
+            </span> */}
+            <span>
+              <a
+                href="https://astc-web-companion-test.netlify.app/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:underline"
+              >
+                ASTC
+              </a>
+            </span>
+            <span>
+              <a
+                href="https://practice-sitez.netlify.app/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:underline"
+              >
+                PAT.I0
               </a>
             </span>
           </div>
@@ -119,6 +139,7 @@ export default function Nav() {
                 href="https://anaira.netlify.app/"
                 target="_blank"
                 rel="noopener noreferrer"
+                className="hover:underline"
               >
                 SQUAD HOME PAGE
               </a>
@@ -128,6 +149,7 @@ export default function Nav() {
                 href="https://therealpokedex.netlify.app/"
                 target="_blank"
                 rel="noopener noreferrer"
+                className="hover:underline"
               >
                 POKEDEX
               </a>
@@ -137,6 +159,7 @@ export default function Nav() {
                 href="https://cowsaywhat.netlify.app/"
                 target="_blank"
                 rel="noopener noreferrer"
+                className="hover:underline"
               >
                 COW SAY
               </a>
@@ -146,6 +169,7 @@ export default function Nav() {
                 href="https://quiz-me-trivia-app.netlify.app/"
                 target="_blank"
                 rel="noopener noreferrer"
+                className="hover:underline"
               >
                 QUIZ ME
               </a>
@@ -155,6 +179,7 @@ export default function Nav() {
                 href="https://pocket-dictionary-app.netlify.app/"
                 target="_blank"
                 rel="noopener noreferrer"
+                className="hover:underline"
               >
                 DICTIONARY
               </a>
@@ -164,6 +189,7 @@ export default function Nav() {
                 href="https://bankbankster.netlify.app/"
                 target="_blank"
                 rel="noopener noreferrer"
+                className="hover:underline"
               >
                 BANK BANKSTER
               </a>
@@ -173,6 +199,7 @@ export default function Nav() {
                 href="https://linknyc-finder.netlify.app/"
                 target="_blank"
                 rel="noopener noreferrer"
+                className="hover:underline"
               >
                 LinkNYC FINDER
               </a>
