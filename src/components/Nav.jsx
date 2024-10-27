@@ -41,7 +41,7 @@ export default function Nav() {
           alt="Logo"
         />
       </a>
-      <ul className="flex space-x-6">
+      <ul className="relative z-50 flex space-x-6">
         <li className="relative">
           <span
             onClick={handleGroupDisplayChange}

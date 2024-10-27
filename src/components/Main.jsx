@@ -3,6 +3,11 @@ import Connect4 from "../assets/Connect4.png";
 import QuizMe from "../assets/QuizMe.png";
 import CowSay from "../assets/CowSay.png";
 import Dictionary from "../assets/Dictionary.png";
+import ASTC from "../assets/ASTC.png";
+import BankBankster from "../assets/BankBankster.png";
+import YoutubeClone from "../assets/YoutubeClone.png";
+import LinkNYC from "../assets/LinkNYC.png";
+import Pati0 from "../assets/Pati0.png";
 
 export default function Main() {
   return (
@@ -75,8 +80,8 @@ export default function Main() {
           >
             <img
               className="w-24 h-24 rounded-lg hover:scale-125"
-              src={Dictionary}
-              alt=""
+              src={YoutubeClone}
+              alt="YoutubeClone"
             />
           </a>
         </div>
@@ -88,8 +93,8 @@ export default function Main() {
           >
             <img
               className="w-24 h-24 rounded-lg hover:scale-125"
-              src={Dictionary}
-              alt=""
+              src={ASTC}
+              alt="ASTC"
             />
           </a>
         </div>
@@ -101,8 +106,8 @@ export default function Main() {
           >
             <img
               className="w-24 h-24 rounded-lg hover:scale-125"
-              src={Dictionary}
-              alt=""
+              src={BankBankster}
+              alt="BankBankster"
             />
           </a>
         </div>
@@ -114,8 +119,8 @@ export default function Main() {
           >
             <img
               className="w-24 h-24 rounded-lg hover:scale-125"
-              src={Dictionary}
-              alt=""
+              src={LinkNYC}
+              alt="LinkNYC"
             />
           </a>
         </div>
@@ -127,9 +132,29 @@ export default function Main() {
           >
             <img
               className="w-24 h-24 rounded-lg hover:scale-125"
-              src={Dictionary}
+              src={Pati0}
               alt="Pat.io"
             />
+          </a>
+        </div>
+        <div className="flex items-center justify-center col-start-4 col-end-5 row-start-4 row-end-5 hover:scale-110 transform transition-transform hover:animate-shake cursor-pointer">
+          <a
+            href="https://github.com/runquan-ray-zhou"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-8xl"
+          >
+            <i className="fab fa-github"></i>
+          </a>
+        </div>
+        <div className="flex items-center justify-center col-start-2 col-end-3 row-start-4 row-end-5 hover:scale-110 transform transition-transform hover:animate-shake cursor-pointer">
+          <a
+            href="https://www.linkedin.com/in/runquanrayzhou/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-8xl text-blue-500"
+          >
+            <i className="fab fa-linkedin"></i>
           </a>
         </div>
       </div>
