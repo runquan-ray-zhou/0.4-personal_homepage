@@ -1,74 +1,185 @@
-import { useState, useEffect } from "react"
-import logo from "../assets/Screenshot 2024-08-23 at 12.46.54 AM.png"
+import { useState, useEffect } from "react";
+import logo from "../assets/Screenshot 2024-08-23 at 12.46.54 AM.png";
 
 export default function Nav() {
+  const [groupDisplay, setGroupDisplay] = useState("hidden");
+  const [portfolioDisplay, setPortfolioDisplay] = useState("hidden");
 
-    const [groupDisplay, setGroupDisplay] = useState("none")
-    const [portfolioDisplay, setPortfolioDisplay] = useState("none")
+  function handleGroupDisplayChange() {
+    setGroupDisplay(groupDisplay === "hidden" ? "flex" : "hidden");
+    setPortfolioDisplay("hidden");
+  }
 
-    function handleGroupDisplayChange() {
-        if (groupDisplay === "none") {
-            setGroupDisplay("flex")
-            setPortfolioDisplay("none")
-        } else {
-            setGroupDisplay("none")
-        }
+  function handlePortfolioDisplayChange() {
+    setPortfolioDisplay(portfolioDisplay === "hidden" ? "flex" : "hidden");
+    setGroupDisplay("hidden");
+  }
+
+  useEffect(() => {
+    function handleClickOutside(event) {
+      if (
+        !event.target.closest(".group-container") &&
+        !event.target.closest("a")
+      ) {
+        setGroupDisplay("hidden");
+        setPortfolioDisplay("hidden");
+      }
     }
 
-    function handlePortfolioDisplayChange() {
-        if (portfolioDisplay === "none") {
-            setPortfolioDisplay("flex")
-            setGroupDisplay("none")
-        } else {
-            setPortfolioDisplay("none")
-        }
-    }
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, []);
 
-    useEffect(() => {
-        function handleClickOutside(event) {
-            if (!event.target.closest('.group-container') && !event.target.closest('a')) {
-                setGroupDisplay("none");
-                setPortfolioDisplay("none");
-            }
-        }
-
-        document.addEventListener("mousedown", handleClickOutside);
-        return () => {
-            document.removeEventListener("mousedown", handleClickOutside);
-        };
-    }, []);
-
-    return (
-
-    <nav>
-        <a href="https://runquanrayzhou.netlify.app/"><img src={logo} className="logo" /></a>
-        <ul>
-            <li>
-                <span onClick={handleGroupDisplayChange}>GROUP PROJECTS</span>
-                    <div className="dropDown" style={{display:groupDisplay}}>
-                        <span><a href="https://mynotes-app-project.netlify.app/" target="_blank" rel="noopener noreferrer">0.7 - NOTES APP</a></span>
-                        <span><a href="https://therealyoutube.netlify.app/" target="_blank" rel="noopener noreferrer">0.9 - YOUTUBE CLONE</a></span>
-                        <span><a href="https://streetbites.netlify.app/" target="_blank" rel="noopener noreferrer">1.6 - STREETBITES APP</a></span>
-                    </div>
-                    
-            </li>
-            <li>
-                <span onClick={handlePortfolioDisplayChange}>PORTFOLIO</span>
-                        <div className="dropDown" style={{display:portfolioDisplay}}>
-                            <span><a href="https://squadtrack.netlify.app/" target="_blank" rel="noopener noreferrer">0.1 - SQUAD TRACK</a></span>
-                            <span><a href="https://runquan-ray-zhou.github.io/0.2-connectfour/" target="_blank" rel="noopener noreferrer">0.2 - CONNECT 4</a></span>
-                            <span><a href="https://anaira.netlify.app/" target="_blank" rel="noopener noreferrer">0.3 - SQUAD HOME PAGE</a></span>
-                            <span><a href="https://therealpokedex.netlify.app/" target="_blank" rel="noopener noreferrer">0.4 - POKEDEX</a></span>
-                            <span><a href="https://cowsaywhat.netlify.app/" target="_blank" rel="noopener noreferrer">0.6 - COW SAY</a></span>
-                            <span><a href="https://quiz-me-trivia-app.netlify.app/" target="_blank" rel="noopener noreferrer">0.8 - QUIZ ME</a></span>
-                            <span><a href="https://pocket-dictionary-app.netlify.app/" target="_blank" rel="noopener noreferrer">1.0 - DICTIONARY</a></span>
-                            <span><a href="https://bankbankster.netlify.app/" target="_blank" rel="noopener noreferrer">1.1 - BANK BANKSTER</a></span>
-                            <span><a href="https://linknyc-finder.netlify.app/" target="_blank" rel="noopener noreferrer">2.9 - LinkNYC FINDER</a></span>
-                        </div>
-            </li>
-            <li><a href="">ABOUT ME</a></li>
-        </ul>
+  return (
+    <nav className="flex items-center justify-between px-4 py-4 bg-gray-800 text-white">
+      <a href="https://runquanrayzhou.netlify.app/">
+        <img
+          src={logo}
+          className="w-24 h-12 object-cover rounded-lg"
+          alt="Logo"
+        />
+      </a>
+      <ul className="flex space-x-6">
+        <li className="relative">
+          <span
+            onClick={handleGroupDisplayChange}
+            className="cursor-pointer hover:text-gray-300"
+          >
+            GROUP PROJECTS
+          </span>
+          <div
+            className={`absolute top-full mt-2 left-0 bg-gray-700 text-white rounded-md shadow-lg p-4 flex-col space-y-2 ${groupDisplay}`}
+          >
+            <span>
+              <a
+                href="https://mynotes-app-project.netlify.app/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:underline"
+              >
+                NOTES APP
+              </a>
+            </span>
+            <span>
+              <a
+                href="https://therealyoutube.netlify.app/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:underline"
+              >
+                YOUTUBE CLONE
+              </a>
+            </span>
+            <span>
+              <a
+                href="https://streetbites.netlify.app/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:underline"
+              >
+                STREETBITES APP
+              </a>
+            </span>
+          </div>
+        </li>
+        <li className="relative">
+          <span
+            onClick={handlePortfolioDisplayChange}
+            className="cursor-pointer hover:text-gray-300 mr-8"
+          >
+            PORTFOLIO
+          </span>
+          <div
+            className={`absolute top-full mt-2 left-0 bg-gray-700 text-white rounded-md shadow-lg p-4 flex-col space-y-2 ${portfolioDisplay}`}
+          >
+            <span>
+              <a
+                href="https://squadtrack.netlify.app/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:underline"
+              >
+                SQUAD TRACK
+              </a>
+            </span>
+            <span>
+              <a
+                href="https://runquan-ray-zhou.github.io/0.2-connectfour/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:underline"
+              >
+                CONNECT 4
+              </a>
+            </span>
+            <span>
+              <a
+                href="https://anaira.netlify.app/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                SQUAD HOME PAGE
+              </a>
+            </span>
+            <span>
+              <a
+                href="https://therealpokedex.netlify.app/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                POKEDEX
+              </a>
+            </span>
+            <span>
+              <a
+                href="https://cowsaywhat.netlify.app/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                COW SAY
+              </a>
+            </span>
+            <span>
+              <a
+                href="https://quiz-me-trivia-app.netlify.app/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                QUIZ ME
+              </a>
+            </span>
+            <span>
+              <a
+                href="https://pocket-dictionary-app.netlify.app/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                DICTIONARY
+              </a>
+            </span>
+            <span>
+              <a
+                href="https://bankbankster.netlify.app/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                BANK BANKSTER
+              </a>
+            </span>
+            <span>
+              <a
+                href="https://linknyc-finder.netlify.app/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                LinkNYC FINDER
+              </a>
+            </span>
+          </div>
+        </li>
+      </ul>
     </nav>
-
-    )
+  );
 }
