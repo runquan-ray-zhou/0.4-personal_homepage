@@ -94,7 +94,7 @@ export default function Nav() {
             </span>
             <span>
               <a
-                href="https://practice-sitez.netlify.app/"
+                href="https://pat-io.netlify.app/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="hover:underline"

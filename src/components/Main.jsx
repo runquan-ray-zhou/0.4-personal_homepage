@@ -126,7 +126,7 @@ export default function Main() {
         </div>
         <div className="flex items-center justify-center col-start-3 col-end-4 row-start-4 row-end-5 hover:scale-110 transform transition-transform hover:animate-shake cursor-pointer">
           <a
-            href="https://practice-sitez.netlify.app/"
+            href="https://pat-io.netlify.app/"
             target="_blank"
             rel="noopener noreferrer"
           >
