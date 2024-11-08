@@ -37,18 +37,24 @@ export default function Info() {
         <a
           href="https://www.linkedin.com/in/runquanrayzhou/"
           className="text-3xl hover:text-blue-600 transition"
+          target="_blank"
+          rel="noopener noreferrer"
         >
           <i className="fab fa-linkedin"></i>
         </a>
         <a
           href="https://github.com/runquan-ray-zhou"
           className="text-3xl hover:text-gray-800 transition"
+          target="_blank"
+          rel="noopener noreferrer"
         >
           <i className="fab fa-github"></i>
         </a>
         <a
           href="https://therealyoutube.netlify.app/"
           className="text-3xl hover:text-red-600 transition"
+          target="_blank"
+          rel="noopener noreferrer"
         >
           <i className="fab fa-youtube"></i>
         </a>

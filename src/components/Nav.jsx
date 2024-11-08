@@ -42,7 +42,7 @@ export default function Nav() {
         />
       </a>
       <ul className="relative z-50 flex space-x-6">
-        <li className="relative">
+        <li className="relative ml-6 md:ml-0">
           <span
             onClick={handleGroupDisplayChange}
             className="cursor-pointer hover:text-gray-300"
@@ -104,7 +104,7 @@ export default function Nav() {
             </span>
           </div>
         </li>
-        <li className="relative">
+        <li className="relative ml-6 md:ml-0">
           <span
             onClick={handlePortfolioDisplayChange}
             className="cursor-pointer hover:text-gray-300 mr-8"

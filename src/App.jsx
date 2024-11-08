@@ -9,7 +9,7 @@ function App() {
       <header className="w-full">
         <Nav />
       </header>
-      <main className="flex flex-row items-center w-full md:px-8 lg:px-8">
+      <main className="flex flex-col md:flex-row items-center w-full md:px-8 lg:px-8">
         <Info />
         <Main />
       </main>

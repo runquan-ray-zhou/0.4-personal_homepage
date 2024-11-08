@@ -11,9 +11,9 @@ import Pati0 from "../assets/Pati0.png";
 
 export default function Main() {
   return (
-    <div className="hidden md:block mt-4">
-      <div className="grid grid-cols-5 grid-rows-4 gap-4">
-        <div className="col-start-2 col-end-5 row-start-1 row-end-4">
+    <div className="mt-4">
+      <div className="flex flex-col md:grid grid-cols-5 grid-rows-4 gap-4">
+        <div className="hidden md:block col-start-2 col-end-5 row-start-1 row-end-4">
           <img
             src={bw}
             alt="Black and White Portrait"
@@ -27,7 +27,7 @@ export default function Main() {
             rel="noopener noreferrer"
           >
             <img
-              className="w-24 h-24 rounded-lg hover:scale-125"
+              className="w-40 h-40 md:w-24 md:h-24 rounded-lg hover:scale-125"
               src={Connect4}
               alt="connect4"
             />
@@ -40,7 +40,7 @@ export default function Main() {
             rel="noopener noreferrer"
           >
             <img
-              className="w-24 h-24 rounded-lg hover:scale-125"
+              className="w-40 h-40 md:w-24 md:h-24 rounded-lg hover:scale-125"
               src={CowSay}
               alt=""
             />
@@ -53,7 +53,7 @@ export default function Main() {
             rel="noopener noreferrer"
           >
             <img
-              className="w-24 h-24 rounded-lg hover:scale-125"
+              className="w-40 h-40 md:w-24 md:h-24 rounded-lg hover:scale-125"
               src={QuizMe}
               alt=""
             />
@@ -66,7 +66,7 @@ export default function Main() {
             rel="noopener noreferrer"
           >
             <img
-              className="w-24 h-24 rounded-lg hover:scale-125"
+              className="w-40 h-40 md:w-24 md:h-24 rounded-lg hover:scale-125"
               src={Dictionary}
               alt=""
             />
@@ -79,7 +79,7 @@ export default function Main() {
             rel="noopener noreferrer"
           >
             <img
-              className="w-24 h-24 rounded-lg hover:scale-125"
+              className="w-40 h-40 md:w-24 md:h-24 rounded-lg hover:scale-125"
               src={YoutubeClone}
               alt="YoutubeClone"
             />
@@ -92,7 +92,7 @@ export default function Main() {
             rel="noopener noreferrer"
           >
             <img
-              className="w-24 h-24 rounded-lg hover:scale-125"
+              className="w-40 h-40 md:w-24 md:h-24 rounded-lg hover:scale-125"
               src={ASTC}
               alt="ASTC"
             />
@@ -105,7 +105,7 @@ export default function Main() {
             rel="noopener noreferrer"
           >
             <img
-              className="w-24 h-24 rounded-lg hover:scale-125"
+              className="w-40 h-40 md:w-24 md:h-24 rounded-lg hover:scale-125"
               src={BankBankster}
               alt="BankBankster"
             />
@@ -118,7 +118,7 @@ export default function Main() {
             rel="noopener noreferrer"
           >
             <img
-              className="w-24 h-24 rounded-lg hover:scale-125"
+              className="w-40 h-40 md:w-24 md:h-24 rounded-lg hover:scale-125"
               src={LinkNYC}
               alt="LinkNYC"
             />
@@ -131,13 +131,13 @@ export default function Main() {
             rel="noopener noreferrer"
           >
             <img
-              className="w-24 h-24 rounded-lg hover:scale-125"
+              className="w-40 h-40 md:w-24 md:h-24 rounded-lg hover:scale-125"
               src={Pati0}
               alt="Pat.io"
             />
           </a>
         </div>
-        <div className="flex items-center justify-center col-start-4 col-end-5 row-start-4 row-end-5 hover:scale-110 transform transition-transform hover:animate-shake cursor-pointer">
+        <div className="hidden md:flex items-center justify-center col-start-4 col-end-5 row-start-4 row-end-5 hover:scale-110 transform transition-transform hover:animate-shake cursor-pointer">
           <a
             href="https://github.com/runquan-ray-zhou"
             target="_blank"
@@ -147,7 +147,7 @@ export default function Main() {
             <i className="fab fa-github"></i>
           </a>
         </div>
-        <div className="flex items-center justify-center col-start-2 col-end-3 row-start-4 row-end-5 hover:scale-110 transform transition-transform hover:animate-shake cursor-pointer">
+        <div className="hidden md:flex items-center justify-center col-start-2 col-end-3 row-start-4 row-end-5 hover:scale-110 transform transition-transform hover:animate-shake cursor-pointer">
           <a
             href="https://www.linkedin.com/in/runquanrayzhou/"
             target="_blank"
