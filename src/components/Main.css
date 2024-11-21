@@ -11,3 +11,21 @@
 .modal-container::-webkit-scrollbar-thumb:hover {
   background-color: #a0aec0; /* Adjust hover color */
 }
+
+/* Add to Main.css */
+.hover-modal {
+  top: -50%; /* Adjust to position above the project tile */
+  left: 50%;
+  transform: translate(-50%, -100%);
+  z-index: 10;
+  animation: fadeIn 0.2s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

@@ -68,7 +68,7 @@ export default function Info() {
       </div>
       <div>
         <h1 className="text-4xl md:text-5xl font-bold mt-2 text-center">
-          Check out some of my projects!!!
+          Click on some of my projects!!!
         </h1>
       </div>
     </div>

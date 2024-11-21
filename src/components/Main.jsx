@@ -11,20 +11,33 @@ import LinkNYC from "../assets/LinkNYC.png";
 import Pati0 from "../assets/Pati0.png";
 import "./Main.css";
 
-const ProjectLink = ({ href, title, src, onClick }) => (
-  <div
-    className="flex items-center justify-center hover:scale-110 transform transition-transform hover:animate-shake cursor-pointer"
-    onClick={onClick} // Trigger onClick when the project is clicked
-    tabIndex={0} // Make clickable with keyboard
-    onKeyDown={(e) => {
-      if (e.key === "Enter" || e.key === " ") onClick();
-    }}
-  >
-    <img
-      className="w-40 h-40 md:w-24 md:h-24 rounded-lg hover:scale-125"
-      src={src}
-      alt={title}
-    />
+const ProjectLink = ({ href, title, src, onClick }) => {
+  const [isHovered, setIsHovered] = useState(false);
+
+  return (
+    <div
+      className="relative flex items-center justify-center hover:scale-110 transform transition-transform hover:animate-shake cursor-pointer"
+      onMouseEnter={() => setIsHovered(true)} // Show hover modal
+      onMouseLeave={() => setIsHovered(false)} // Hide hover modal
+      onClick={onClick} // Trigger onClick when the project is clicked
+      tabIndex={0} // Make clickable with keyboard
+      onKeyDown={(e) => {
+        if (e.key === "Enter" || e.key === " ") onClick();
+      }}
+    >
+      <img
+        className="w-40 h-40 md:w-24 md:h-24 rounded-lg hover:scale-125"
+        src={src}
+        alt={title}
+      />
+      {isHovered && <HoverModal message="Click Me!" />} {/* Show hover modal */}
+    </div>
+  );
+};
+
+const HoverModal = ({ message }) => (
+  <div className="absolute hover-modal bg-black bg-opacity-80 text-white px-4 py-2 rounded-lg shadow-lg text-center">
+    {message}
   </div>
 );
 
