@@ -30,7 +30,7 @@ const ProjectLink = ({ href, title, src, onClick }) => (
 
 const Modal = ({ project, onClose }) => (
   <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50">
-    <div className="bg-white p-8 rounded-lg shadow-lg max-w-3xl w-full">
+    <div className="bg-white p-8 rounded-lg shadow-lg max-w-3xl w-full max-h-[90vh] overflow-y-auto modal-container">
       <h2 className="text-3xl font-bold mb-6 text-center">{project.title}</h2>
       <p className="text-lg mb-6 text-gray-700">
         This is some detailed information about the {project.title} project. You
@@ -49,7 +49,7 @@ const Modal = ({ project, onClose }) => (
           href={project.github}
           target="_blank"
           rel="noopener noreferrer"
-          className="text-white bg-blue-600 hover:bg-blue-700 ml-2 px-6 py-3 rounded-lg font-semibold transition"
+          className="text-white bg-gray-600 hover:bg-gray-700 ml-2 px-6 py-3 rounded-lg font-semibold transition"
         >
           Visit Code
         </a>
