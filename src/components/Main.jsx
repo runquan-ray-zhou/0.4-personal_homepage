@@ -45,10 +45,7 @@ const Modal = ({ project, onClose }) => (
   <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50">
     <div className="bg-white p-8 rounded-lg shadow-lg max-w-3xl w-full max-h-[90vh] overflow-y-auto modal-container">
       <h2 className="text-3xl font-bold mb-6 text-center">{project.title}</h2>
-      <p className="text-lg mb-6 text-gray-700">
-        This is some detailed information about the {project.title} project. You
-        can explore more about it by clicking the link below. {project.summary}
-      </p>
+      <p className="text-lg mb-6 text-gray-700">{project.summary}</p>
       <div className="flex justify-center">
         <a
           href={project.href}
@@ -99,28 +96,32 @@ const Main = () => {
       href: "https://runquan-ray-zhou.github.io/0.2-connectfour/",
       title: "Connect4",
       src: Connect4,
-      summary: "",
+      summary:
+        "This project showcases an early boot camp exercise where I applied the logic of Tic-Tac-Toe to create a fun and interactive Connect 4 game. Enjoy!",
       github: "https://github.com/runquan-ray-zhou/0.2-connectfour",
     },
     {
       href: "https://cowsaywhat.netlify.app/",
       title: "CowSay",
       src: CowSay,
-      summary: "",
+      summary:
+        "This is another small project where I learned to use npm packages. I used the cowsay command-line npm package and brought some of its content to be viewed on the web.",
       github: "https://github.com/runquan-ray-zhou/0.5-Cow_Say",
     },
     {
       href: "https://quiz-me-trivia-app.netlify.app/",
       title: "QuizMe",
       src: QuizMe,
-      summary: "",
+      summary:
+        "QuizMe is a web application that provides users with an engaging and interactive platform to test their knowledge across various topics and difficulty levels. Using the Open Trivia Database (OpenTDB) API, the app generates trivia questions in different formats, including multiple-choice and true/false, ensuring a fun and challenging experience for users of all ages.",
       github: "https://github.com/runquan-ray-zhou/quiz-me",
     },
     {
       href: "https://pocket-dictionary-app.netlify.app/",
-      title: "Dictionary",
+      title: "PokéVocab",
       src: Dictionary,
-      summary: "",
+      summary:
+        "PokéVocab is a user-friendly dictionary application designed to help users quickly find word definitions and build a personalized vocabulary bank. Using the Dictionary API, the app provides comprehensive definitions, and users can save their favorite words for future reference. Additionally, all displayed words are clickable, allowing users to seamlessly explore related definitions.",
       github: "https://github.com/runquan-ray-zhou/dictionary",
     },
     {
@@ -144,7 +145,8 @@ const Main = () => {
       href: "https://bankbankster.netlify.app/",
       title: "BankBankster",
       src: BankBankster,
-      summary: "",
+      summary:
+        "Bank Bankster is a modern web application designed to manage bank transactions seamlessly. This project is the frontend component of the Bank Bankster platform, providing an intuitive interface for users to track, analyze, and interact with their financial data. Built with React and Vite, the app leverages cutting-edge tools and libraries to ensure a smooth and engaging user experience.",
       github:
         "https://github.com/runquan-ray-zhou/1.1-bank-transaction-app-frontend",
     },
