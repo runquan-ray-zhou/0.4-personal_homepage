@@ -132,15 +132,15 @@ const Main = () => {
         "This group project is a YouTube clone built using React, React Router DOM, and SCSS. It provides users with features similar to the popular video-sharing platform, allowing them to view multiple videos on a homepage, watch individual videos on their own page, leave comments on videos, see suggested videos in a sidebar, search easily from the navbar, and filter videos by category.",
       github: "https://github.com/alexandra-perez/youtube-clone",
     },
-    {
-      href: "https://astc-web-companion-test.netlify.app/",
-      title: "ASTC",
-      src: ASTC,
-      summary:
-        "The ASTC Convention Companion App is a mobile web application developed as part of a team project for the 2024 ASTC (Association of Science and Technology Centers) convention in Chicago. This app allows users to search for speakers and sessions at the convention. It features an innovative augmented reality (AR) component, enabling users to view 3D models by hovering over specific markers.",
-      github:
-        "https://github.com/runquan-ray-zhou/test-react-web-app-companion-two",
-    },
+    // {
+    //   href: "https://astc-web-companion-test.netlify.app/",
+    //   title: "ASTC",
+    //   src: ASTC,
+    //   summary:
+    //     "The ASTC Convention Companion App is a mobile web application developed as part of a team project for the 2024 ASTC (Association of Science and Technology Centers) convention in Chicago. This app allows users to search for speakers and sessions at the convention. It features an innovative augmented reality (AR) component, enabling users to view 3D models by hovering over specific markers.",
+    //   github:
+    //     "https://github.com/runquan-ray-zhou/test-react-web-app-companion-two",
+    // },
     {
       href: "https://bankbankster.netlify.app/",
       title: "BankBankster",
@@ -158,14 +158,14 @@ const Main = () => {
         "LinkNYC Finder is a web application designed to help users locate the nearest LinkNYC terminals in New York City. These terminals offer free Wi-Fi access across the city. Users can simply input their location, and the app will display a list of the closest terminals where they can connect to the internet.",
       github: "https://github.com/runquan-ray-zhou/2.9-linknyc",
     },
-    {
-      href: "https://pat-io.netlify.app/",
-      title: "Pat.io",
-      src: Pati0,
-      summary:
-        "Pat.io is an AI chatbot fine-tuned to provide migrants with easy access to essential information about Social Security Numbers (SSN), Individual Taxpayer Identification Numbers (ITIN), and New York City’s Local Law 30. Pat.io offers a user-friendly experience to assist migrants in navigating the often complex processes involved in obtaining these identification numbers. Equipped with multi-language functionality, Pat.io can communicate in multiple languages, both in text and voice, making information accessible to a broader audience. By leveraging reliable resources, government data, and a customized AI language model, Pat.io ensures that users receive accurate, up-to-date answers to common questions about eligibility, documentation, and application procedures.",
-      github: "https://github.com/runquan-ray-zhou/3.1-Pat.io",
-    },
+    // {
+    //   href: "https://pat-io.netlify.app/",
+    //   title: "Pat.io",
+    //   src: Pati0,
+    //   summary:
+    //     "Pat.io is an AI chatbot fine-tuned to provide migrants with easy access to essential information about Social Security Numbers (SSN), Individual Taxpayer Identification Numbers (ITIN), and New York City’s Local Law 30. Pat.io offers a user-friendly experience to assist migrants in navigating the often complex processes involved in obtaining these identification numbers. Equipped with multi-language functionality, Pat.io can communicate in multiple languages, both in text and voice, making information accessible to a broader audience. By leveraging reliable resources, government data, and a customized AI language model, Pat.io ensures that users receive accurate, up-to-date answers to common questions about eligibility, documentation, and application procedures.",
+    //   github: "https://github.com/runquan-ray-zhou/3.1-Pat.io",
+    // },
   ];
 
   return (
@@ -182,7 +182,7 @@ const Main = () => {
 
         {/* Left Column Projects */}
         <div className="col-start-1 col-end-2 row-start-1 row-span-4">
-          {projects.slice(0, 4).map((project, idx) => (
+          {projects.slice(0, 3).map((project, idx) => (
             <div
               key={project.title}
               className={`row-start-${idx + 1} row-end-${idx + 2} p-8`}
@@ -197,7 +197,7 @@ const Main = () => {
 
         {/* Right Column Projects */}
         <div className="col-start-5 col-end-6 row-start-1 row-span-4">
-          {projects.slice(4, 8).map((project, idx) => (
+          {projects.slice(3, 6).map((project, idx) => (
             <div
               key={project.title}
               className={`row-start-${idx + 1} row-end-${idx + 2} p-8`}
@@ -213,8 +213,8 @@ const Main = () => {
         {/* Bottom Row */}
         <div className="col-start-3 col-end-4 row-start-4 row-end-5 pt-6">
           <ProjectLink
-            {...projects[8]}
-            onClick={() => setSelectedProject(projects[8])} // Set the selected project on click
+            {...projects[6]}
+            onClick={() => setSelectedProject(projects[6])} // Set the selected project on click
           />
         </div>
 
