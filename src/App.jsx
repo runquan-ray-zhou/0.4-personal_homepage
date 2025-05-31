@@ -2,7 +2,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import "./App.css";
 import Nav from "./components/Nav";
 import Home from "./components/Home";
-import Main from "./components/Main";
+import Project from "./components/Project";
 import Blog from "./components/Blog";
 
 function App() {
@@ -15,7 +15,7 @@ function App() {
         <main className="flex flex-col md:flex-row items-center w-full">
           <Routes>
             <Route path="/" element={<Home />} />
-            <Route path="/projects" element={<Main />} />
+            <Route path="/projects" element={<Project />} />
             <Route path="/blog" element={<Blog />} />
           </Routes>
         </main>

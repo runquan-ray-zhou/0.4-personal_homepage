@@ -1,11 +1,7 @@
-import color from "../assets/color-portrait.jpg";
-import { useNavigate } from "react-router-dom";
-
 export default function Home() {
-  let navigate = useNavigate();
   return (
-    <div className="flex flex-col md:flex-row justify-center items-start min-h-screen w-full mx-auto">
-      <div className="hidden md:block w-full md:w-1/5 bg-[#e0e1dd] min-h-96 md:min-h-screen p-4"></div>
+    <div className="flex flex-col md:flex-row w-full mx-auto">
+      <div className="hidden md:block w-full md:w-1/5 bg-[#e0e1dd] p-4"></div>
       <div className="w-full md:w-3/5 p-6 flex flex-col min-h-screen">
         <div className="flex-grow">
           <div>
@@ -22,8 +18,7 @@ export default function Home() {
             <br />
             <p className="font-bold">
               And on this website you will find some of my web app projects and
-              a blog. Feel free to contact me if you are interested in working
-              on a project together.
+              a blog. Below are my contacts.
             </p>
             <br />
           </div>
@@ -70,7 +65,7 @@ export default function Home() {
           </a>
         </div>
       </div>
-      <div className="hidden md:block w-full md:w-1/5 bg-[#e0e1dd] min-h-96 md:min-h-screen p-4"></div>
+      <div className="hidden md:block w-full md:w-1/5 bg-[#e0e1dd] p-4"></div>
     </div>
   );
 }
