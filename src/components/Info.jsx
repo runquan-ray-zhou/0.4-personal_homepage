@@ -1,6 +1,8 @@
 import color from "../assets/color-portrait.jpg";
+import { useNavigate } from "react-router-dom";
 
 export default function Info() {
+  let navigate = useNavigate();
   return (
     <div className="flex flex-col md:flex-col justify-center items-center mt-6 w-full">
       <div className="text-center">
@@ -68,7 +70,13 @@ export default function Info() {
       </div>
       <div>
         <h1 className="text-4xl md:text-5xl font-bold mt-2 text-center">
-          Click on some of my projects!!!
+          Check out some of my{" "}
+          <span
+            className="font-bold cursor-pointer hover:text-purple-600 transition"
+            onClick={() => navigate(`/home`)}
+          >
+            projects!!!
+          </span>
         </h1>
       </div>
     </div>
