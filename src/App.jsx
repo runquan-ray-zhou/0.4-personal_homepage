@@ -9,7 +9,7 @@ function App() {
   return (
     <div className="min-h-screen flex flex-col items-center bg-gray-100">
       <Router>
-        <header className="w-full">
+        <header className="w-full sticky top-0 z-50">
           <Nav />
         </header>
         <main className="flex flex-col md:flex-row items-center w-full">

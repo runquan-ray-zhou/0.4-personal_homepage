@@ -5,20 +5,20 @@ export default function Home() {
       <div className="w-full md:w-3/5 p-6 flex flex-col min-h-screen">
         <div className="flex-grow">
           <div>
-            <p className="font-bold">
+            <p className="text-sm">
               Hi and welcome to my personal website. My name is Runquan Zhou. I
               also go by
               <span className="text-[#7209b7]"> Ray.</span> I am a Full Stack
               Software Engineer and my motto is:
             </p>
             <br />
-            <p className="font-bold text-center">
+            <p className="text-2xl font-bold text-center">
               "Driven by Challenges, Fueled by Creativity".
             </p>
             <br />
-            <p className="font-bold">
+            <p className="text-sm">
               And on this website you will find some of my web app projects and
-              a blog. Below are my contacts.
+              blog posts. My contact info are at the bottom.
             </p>
             <br />
           </div>
