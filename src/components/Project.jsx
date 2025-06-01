@@ -15,24 +15,24 @@ const ProjectLink = ({ href, title, src, summary, github }) => {
       />
       <div className="flex flex-col justify-between flex-1">
         <div>
-          <h3 className="text-2xl font-semibold">{title}</h3>
-          <p className="hidden md:block">{summary}</p>
+          <h3 className="text-l font-semibold">{title}</h3>
+          <p className="text-sm hidden md:block mt-2">{summary}</p>
         </div>
         <div className="mt-4 flex flex-col md:flex-row gap-2 items-center">
           <a
             href={href}
             target="_blank"
             rel="noopener noreferrer"
-            className="px-4 py-2 bg-blue-600 text-white rounded-md hover:bg-blue-700 transition-colors text-center w-32"
+            className="px-2 py-1 bg-blue-600 text-white rounded-md hover:bg-blue-700 transition-colors text-center w-28"
           >
-            Visit Project
+            Open Project
           </a>
           {github && (
             <a
               href={github}
               target="_blank"
               rel="noopener noreferrer"
-              className="px-4 py-2 bg-gray-800 text-white rounded-md hover:bg-gray-900 transition-colors text-center w-32"
+              className="px-2 py-1 bg-gray-800 text-white rounded-md hover:bg-gray-900 transition-colors text-center w-28"
             >
               Visit Code
             </a>
@@ -100,7 +100,7 @@ export default function Project() {
       <div className="hidden md:block w-full md:w-1/5 bg-[#e0e1dd] p-4"></div>
       <div className="w-full md:w-3/5 p-6 flex flex-col min-h-screen">
         <h1 className="text-2xl font-bold text-center mb-8">
-          Check out my projects!
+          Check out my projects.
         </h1>
         <div className="flex flex-col items-center">
           {projects.map((project) => (
